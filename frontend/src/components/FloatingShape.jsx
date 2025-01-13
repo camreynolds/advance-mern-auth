@@ -1,8 +1,6 @@
 // library import
 import {motion} from "framer-motion"
 
-import React from 'react'
-
 function FloatingShape({color,size,top,left,delay}) {
   return (
     <motion.div
@@ -26,7 +24,7 @@ function FloatingShape({color,size,top,left,delay}) {
         repeat:Infinity,
         delay
       }}
-      aria-hidden:true
+      aria-hidden="true"
     />
   )
 }

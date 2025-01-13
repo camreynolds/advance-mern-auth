@@ -19,7 +19,8 @@ function App() {
         flex
         items-center
         justify-center
-        relat:overflow-hidden
+        relative
+        overflow-hidden
         ">
           <FloatingShape 
             color="bg-green-500"
