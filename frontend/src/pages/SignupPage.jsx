@@ -1,11 +1,11 @@
 // library imported
+import { useState } from "react"
 import {motion} from "framer-motion"
 import {User, Mail, Lock} from "lucide-react"
 import {Link} from "react-router-dom"
 
 // local imported
 import Input from "../components/Input"
-import { useState } from "react"
 import PasswordStrengthMeter from "../components/PasswordStrengthMeter"
 
 function SignupPage() {
