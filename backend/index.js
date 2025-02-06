@@ -1,6 +1,7 @@
 import cookieParser from "cookie-parser"
 import express from "express"
 import dotenv from "dotenv"
+import cors from "cors"
 dotenv.config()
 
 // imported 
@@ -11,6 +12,7 @@ import authRoutes from "./routes/auth.route.js"
 const app = express() // allows us to parse incoming request, req.body
 
 // middlewares
+app.use(cors({origin:"http://localhost:5173", credentials: true}))
 app.use(express.json())
 app.use(cookieParser()) // allows us to parse incoming cookies, req.cookie
 app.use((req,res,next)=>{
