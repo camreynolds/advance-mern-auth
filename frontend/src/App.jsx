@@ -1,5 +1,6 @@
 // library import
 import {Routes,Route} from "react-router-dom"
+import { Toaster } from "react-hot-toast"
 
 // local import
 import FloatingShape from "./components/FloatingShape"
@@ -51,6 +52,7 @@ function App() {
             <Route path="/login" element={<LoginPage/>}/>
             <Route path="/verify-email" element={<EmailVerificationPage/>}/>
           </Routes>
+          <Toaster/>
         </div>
     </>
   )
